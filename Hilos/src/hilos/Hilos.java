@@ -19,7 +19,7 @@ public class Hilos {
         
         // con start se llama a ejecutar
             // aqui si se genera el hilo y se ejecuta como hilo
-            // con run se llaman los hilos pero no se generan los hilos 
+            // con run se llaman los hilos pero no se generan los hilos llamada a un método cualquiera 
         h1.start(); 
         h2.start(); 
     }

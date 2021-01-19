@@ -12,6 +12,9 @@ package hilos;
 public class HelloThread extends Thread{
     
     public void run(){
-        System.out.println("Hola soy el hilo: " + Thread.currentThread().getName());
+       for(int i =0; i<10000; i ++){
+            System.out.println(i + " Hola soy el hilo thread: " + Thread.currentThread().getName());
+        }
+       
     }
 }

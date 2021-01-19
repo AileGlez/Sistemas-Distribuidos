@@ -13,7 +13,10 @@ public class HelloRunnable implements Runnable  {
 
     @Override
     public void run() {
-       System.out.println("Hola soy el hilo: " + Thread.currentThread().getName());
+        for(int i =0; i<10000; i ++){
+            System.out.println(i + " Hola soy el hilo runnable: " + Thread.currentThread().getName());
+        }
+       
     }
     
 }
