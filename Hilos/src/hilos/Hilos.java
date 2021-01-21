@@ -16,7 +16,7 @@ public class Hilos {
     
     //20-01-21 MECANISMO DE SINCRONIZACIÓN
     public static void main (String args[]){
-        //Instancia del hello thread 
+        /*//Instancia del hello thread 
         HelloThread h0 = new HelloThread(); 
         // Instancia de hello Runnable
         Thread h1 = new Thread(new HelloRunnable());
@@ -31,7 +31,14 @@ public class Hilos {
         } catch (InterruptedException ex) {
             Logger.getLogger(Hilos.class.getName()).log(Level.SEVERE, null, ex);
         }
+        h1.start(); */
+        
+        Counter c = new Counter(0); 
+        SynchronizedThread h0 = new SynchronizedThread(c); 
+        SynchronizedThread h1 = new SynchronizedThread(c); 
+        h0.start(); 
         h1.start(); 
+        
     }
     
 }
