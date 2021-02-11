@@ -11,10 +11,10 @@ public class Person implements Serializable{
    private String place; 
    private int year; 
    
-   public Person(String name,String place, int year){
-       name = this.name; 
-       place = this.name; 
-       year = this.year; 
+   public Person(String aName,String aPlace, int aYear){
+       name = aName; 
+       place = aPlace; 
+       year = aYear; 
    }
 
    @Override
