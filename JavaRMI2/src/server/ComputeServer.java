@@ -27,6 +27,7 @@ public class ComputeServer implements Compute {
             Registry registry = LocateRegistry.getRegistry();
             registry.rebind(name,stub); //
             System.out.println("Servicio desplegado");
+
         } catch (RemoteException ex) {
             Logger.getLogger(ComputeServer.class.getName()).log(Level.SEVERE, null, ex);
         }

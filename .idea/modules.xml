@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos.iml" filepath="$PROJECT_DIR$/Hilos/Hilos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBoTs/JavaBoTs.iml" filepath="$PROJECT_DIR$/JavaBoTs/JavaBoTs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaRMI/JavaRMI.iml" filepath="$PROJECT_DIR$/JavaRMI/JavaRMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaRMI2/JavaRMI2.iml" filepath="$PROJECT_DIR$/JavaRMI2/JavaRMI2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaSerialization/JavaSerialization.iml" filepath="$PROJECT_DIR$/JavaSerialization/JavaSerialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTCPSockets/JavaTCPSockets.iml" filepath="$PROJECT_DIR$/JavaTCPSockets/JavaTCPSockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaUDPSockets/JavaUDPSockets.iml" filepath="$PROJECT_DIR$/JavaUDPSockets/JavaUDPSockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SistemasDistribuidos.iml" filepath="$PROJECT_DIR$/.idea/SistemasDistribuidos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaipmulticast/javaipmulticast.iml" filepath="$PROJECT_DIR$/javaipmulticast/javaipmulticast.iml" />
+    </modules>
+  </component>
+</project>
