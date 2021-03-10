@@ -1,5 +1,6 @@
 package client;
 import interfaces.Compute;
+import interfaces.Credential;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -22,8 +23,11 @@ public class ComputeClient {
         try {
             registry = LocateRegistry.getRegistry("localhost");
             Compute comp = (Compute)registry.lookup(name);
-            System.out.println(comp.power(3,3));
-            System.out.println(comp.square(2));
+
+            Credential aCredential = new Credential(8, "Octavio");
+
+            System.out.println(comp.power(3,3, aCredential));
+            System.out.println(comp.square(2, aCredential));
         } catch (RemoteException ex) {
             Logger.getLogger(ComputeClient.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NotBoundException e) {

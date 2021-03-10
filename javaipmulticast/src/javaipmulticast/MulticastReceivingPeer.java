@@ -20,13 +20,13 @@ public class MulticastReceivingPeer {
 	   	s.joinGroup(group); 
 
 	    	byte[] buffer = new byte[1000];
- 	   	for(int i=0; i< 3; i++) {
+ 	   	//for(int i=0; i< 3; i++) {
                     System.out.println("Waiting for messages");
                     DatagramPacket messageIn = 
 			new DatagramPacket(buffer, buffer.length);
  		    s.receive(messageIn);
  		    System.out.println("Message: " + new String(messageIn.getData())+ " from: "+ messageIn.getAddress());
-  	     	}
+  	     	//}
 	    	s.leaveGroup(group);		
  	    }
          catch (SocketException e){

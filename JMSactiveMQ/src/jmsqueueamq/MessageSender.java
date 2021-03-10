@@ -28,7 +28,7 @@ public class MessageSender {
     private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
 
     // default broker URL is : tcp://localhost:61616"
-    private static String subject = "JOGG_QUEUE"; // Queue Name. You can create any/many queue names as per your requirement. 
+    private static String subject = "TAGA_QUEUE"; // Queue Name. You can create any/many queue names as per your requirement.
 
     public void produceMessages() {
         MessageProducer messageProducer;
@@ -66,6 +66,7 @@ public class MessageSender {
     }
 
     public static void main(String[] args) {
+
         new MessageSender().produceMessages();
     }
 }

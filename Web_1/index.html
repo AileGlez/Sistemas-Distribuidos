@@ -21,13 +21,13 @@
             "anio": 1999
         };
 
-        var textoObjetJSON = '{"at1": 1, "at2": 2'
+        var textoObjetJSON = '{"at1": 1, "at2": 2}'
         var otroObjetoJSON = JSON.parse(textoObjetJSON);
         objetoJSON["otrodato"] = "adjfnfa";
         document.getElementById("un_nombre").innerHTML = objetoJSON.nombre;
         document.getElementById("un_lugar").innerHTML = objetoJSON["lugar"];
         document.getElementById("un_nacimineto").innerHTML = objetoJSON.anio;
-        document.getElementById("un_otro_dato").innerHTML = JSON.stringify(objetoJSON);
+        document.getElementById("un_otro_dato").innerHTML = otroObjetoJSON.at1; //JSON.stringify(otroObjetoJSON);
     </script>
 </body>
 

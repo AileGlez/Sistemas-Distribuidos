@@ -1,5 +1,7 @@
 package server;
 import interfaces.Compute;
+import interfaces.Credential;
+
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -17,7 +19,7 @@ public class ComputeServer implements Compute {
         }
 
         try {
-            LocateRegistry.createRegistry(1099);
+            LocateRegistry.createRegistry(1099); //instanciar el servidor
 
             String name = "Compute";
 
@@ -25,7 +27,7 @@ public class ComputeServer implements Compute {
             Compute stub = (Compute)UnicastRemoteObject.exportObject(engine,0);
 
             Registry registry = LocateRegistry.getRegistry();
-            registry.rebind(name,stub); //
+            registry.rebind(name,stub); //pblicacion
             System.out.println("Servicio desplegado");
 
         } catch (RemoteException ex) {
@@ -33,13 +35,14 @@ public class ComputeServer implements Compute {
         }
     }
 
-    @Override
-    public double square(int number) throws RemoteException{
+
+    public double square(int number, Credential aCrendential) throws RemoteException{
         return number*number;
     }
 
-    @Override
-    public double power(int num1, int num2) throws RemoteException{
+    public double power(int num1, int num2, Credential aCrendential) throws RemoteException{
         return java.lang.Math.pow(num1, num2);
     }
+
+
 }

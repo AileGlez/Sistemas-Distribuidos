@@ -5,9 +5,9 @@ import java.rmi.RemoteException;
 public interface Compute extends Remote {
 
     // Calculate the square of a number
-    public double square(int number) throws RemoteException;
+    public double square(int number, Credential aCrendential) throws RemoteException;
 
     // Calculate the power of a number
-    public double power ( int num1, int num2) throws RemoteException;
+    public double power ( int num1, int num2, Credential aCrendential) throws RemoteException;
 
 }
