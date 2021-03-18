@@ -27,6 +27,7 @@ class Connection extends Thread {
 	DataInputStream in;
 	DataOutputStream out;
 	Socket clientSocket;
+
 	public Connection (Socket aClientSocket) {
 	    try {
 		clientSocket = aClientSocket;
@@ -39,7 +40,7 @@ class Connection extends Thread {
 	public void run(){
 	    try {			                 // an echo server
 		String data = in.readUTF();	     
-                System.out.println("Message received from: " + clientSocket.getRemoteSocketAddress());
+		System.out.println("Message received from: " + clientSocket.getRemoteSocketAddress());
 		out.writeUTF(data);
 	    } 
             catch(EOFException e) {

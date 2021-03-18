@@ -12,7 +12,7 @@ public class TCPClient {
 	    try {
 	    	int serverPort = 7896;
 	   	
-                s = new Socket("localhost", serverPort);    
+	    	s = new Socket("localhost", serverPort);
              //   s = new Socket("127.0.0.1", serverPort);    
 		DataInputStream in = new DataInputStream( s.getInputStream());
 		DataOutputStream out =
@@ -31,11 +31,13 @@ public class TCPClient {
             catch (IOException e) {
                 System.out.println("IO:"+e.getMessage());
             } finally {
-                if(s!=null) 
+                if(s!=null)
                     try {
                         s.close();
                     } catch (IOException e){
-                    System.out.println("close:"+e.getMessage());}
+                        System.out.println("close:"+e.getMessage());
                     }
-            }
+
+	        }
+    }
 }

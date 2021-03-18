@@ -5,6 +5,7 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.net.SocketException;
+import java.nio.ByteBuffer;
 
 /**
  *
@@ -25,7 +26,8 @@ public class MulticastReceivingPeer {
                     DatagramPacket messageIn = 
 			new DatagramPacket(buffer, buffer.length);
  		    s.receive(messageIn);
- 		    System.out.println("Message: " + new String(messageIn.getData())+ " from: "+ messageIn.getAddress());
+
+ 		    System.out.println("Message: " + new String(messageIn.getData()) + " from: "+ messageIn.getAddress());
   	     	//}
 	    	s.leaveGroup(group);		
  	    }

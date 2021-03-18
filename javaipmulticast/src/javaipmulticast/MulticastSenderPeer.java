@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  *
  * @author JGUTIERRGARC
  */
-public class MulticastSenderPeer {
+public class MulticastSenderPeer{
     	public static void main(String args[]){ 
   	 
 	MulticastSocket s =null;
