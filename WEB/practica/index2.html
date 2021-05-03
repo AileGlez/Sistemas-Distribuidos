@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Cotización de seguros de Auto</title>
+</head>
+
+<body>
+    <form action="index3.html" method="GET">
+        <script>
+            const todos_parametros = window.location.search;
+            const parametros = new URLSearchParams(todos_parametros);
+
+            document.writeln("<h1> Sistema de Cotización de seguros de Auto </h1>");
+            document.writeln("<p>Datos personales</p>");
+            document.writeln(" <p> Estimado " + parametros.get("nombre") + " " + parametros.get("apellido") + "<p>");
+            document.writeln(" <p> Genero: " + parametros.get("femenino") + "<p>");
+            document.writeln(" <p> Edad: " + parametros.get("edad") + "<p>");
+            document.writeln(" <p> Estado: " + parametros.get("name") + "<p>");
+        </script>
+
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Marca: </td>
+                <td><input type="text" id="marca" name="marca"></td>
+            </tr>
+            <tr>
+                <td>Modelo: </td>
+                <td><input type="text" id="modelo" name="modelo"></td>
+            </tr>
+            <tr>
+                <td>Placas: </td>
+                <td><input type="text" id="placas" name="placas"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Limpiar"></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

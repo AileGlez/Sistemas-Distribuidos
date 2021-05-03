@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos de Javascript</title>
+</head>
+
+<body>
+    <script>
+        /*const pi = 3.14;
+                                                function cambiar(identificador) {
+                                                    document.getElementById(identificador).innerHTML = "Cambió";
+                                                }
+
+                                                function validar() {
+                                                    var numero = document.getElementById("numero").value;
+                                                    var mensaje = document.getElementById("mensaje").innerHTML;
+                                                    try {
+                                                        if (numero == "") throw "No se capturo nada";
+                                                        if (isNAN(numero)) throw "No es un número";
+                                                        if (numero > 20) throw "El número es muy grande";
+                                                        if (numero < 2) throw "El número es muy pequeño";
+                                                    } catch (error) {
+                                                        mensaje.innerHTML = error;
+                                                    }
+                                                }
+
+                                                function eventoOnMouseOber() {
+                                                    elemento.innerHTML = "AAAAAAAAaa";
+                                                }
+
+                                                function eventoOnMouseOut() {
+                                                    elemento.innerHTML = "BBBBB";
+                                                }
+
+                                        function incrementaTexto(elemento) {
+                                            elemento.innerHTML = elemento.innerHTML.charAt(0) + elemento.innerHTML;
+                                        }
+
+                                        function alteraTexto(elemento) {
+                                            elemento.value = elemento.value.toUpperCase();
+                                        }*/
+
+        function valida() {
+            document.forms["miforma"]["texto"].value
+            if (valor == null || valor == "") {
+                alert("Forma incompleta");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+    <input type="button" value="Inicia Temporizador" onclick="iniciaTemporizador()">
+    <input type="button" value="Cancela Temporizador" onclick="cancelaTemporizador()">
+    <script src="javascripts/myjs.js" defer></script>
+
+
+    <!--<form name="informa" onsubmit="return valida()">
+        Nombre: <input type="text" name="texto" value=""><br>
+        <input type="submit" value="Enviar">
+    </form>-->
+
+
+    <!--<p id="enunciado" onclick="incrementaTexto(this)">Este es un enunciado</p>
+    <p><label>Dato <input type="text" id="dato" value="" onchange="alteraTexto(this)"></label></p>
+
+         <p id="parrafo" onmouseover="eventoOnMouseOber(this)" onmouseout="eventoOnMouseOut(this)"> Texto que activa diferentes eventos del mouse</p>
+
+        <img id="imagen" src="images/down.jpg" onclick="cambiarImagen();">
+
+    <form>
+        <table>
+            <tr>
+                <td id="celda1">Original</td>
+                <td><input type="button" value="Cambiar" onclick="cambiar('celda1');"></td>
+            </tr>
+            <tr>
+                <td id="celda2">Original</td>
+                <td><input type="button" value="Cambiar" onclick="cambiar('celda2');"></td>
+            </tr>
+        </table>
+    </form>
+
+<label> Numero: <input type="text" id="numero"></label><br>
+    <input type="button" value="Validar" onclick="validar();"><br>
+    <span id="mensaje">Potencial mensaje de error</span>
+-->
+</body>
+
+</html>

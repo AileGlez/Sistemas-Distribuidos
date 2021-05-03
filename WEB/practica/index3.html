@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Cotización de seguros de Auto</title>
+</head>
+
+<body>
+
+    <script>
+        const todos_parametros = window.location.search;
+        const parametros = new URLSearchParams(todos_parametros);
+
+        document.writeln(" <p> Estimado " + parametros.get("nombre") + " " + parametros.get("apellido") + "<p>");
+        document.writeln("<p>En función de los datos proporcionado: </p>");
+        document.writeln(" <p> Genero: " + parametros.get("nombre") + "<p>");
+        document.writeln(" <p> Edad: " + parametros.get("edad") + "<p>");
+        document.writeln(" <p> Estado: " + parametros.get("estado") + "<p>");
+
+        document.writeln(" <p> Marca: " + parametros.get("marca") + "<p>");
+        document.writeln(" <p> Modelo: " + parametros.get("modelo") + "<p>");
+        document.writeln(" <p> Placas: " + parametros.get("placas") + "<p>");
+
+        document.writeln("<p>La cotización de su seguro es: </p>");
+        document.writeln("<h1>" + 4546 + "</h1>");
+    </script>
+
+</body>
+
+</html>

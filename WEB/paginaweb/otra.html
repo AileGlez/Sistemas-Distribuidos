@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Esta es otra página</title>
+</head>
+
+<body>
+    <script>
+        const todos_parametros = window.location.search;
+
+        const parametros = new URLSearchParams(todos_parametros);
+
+        document.write("<h1> Esta es la info enviada </h1>");
+        document.write("<p> Vacunado: " + parametros.get("vacunado") + "<p>");
+    </script>
+
+    Hola ya estamos en otra página
+
+</body>
+
+</html>
